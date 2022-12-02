@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddActivity"
+    android:background="@drawable/adddesiegn"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/addImageView"
+        android:layout_width="239dp"
+        android:layout_height="182dp"
+        android:layout_marginLeft="90sp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/photo"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <EditText
+        android:padding="7dp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="90sp"
+        android:layout_marginTop="40sp"
+        android:id="@+id/yournameText"
+        android:layout_width="225dp"
+        android:layout_height="58dp"
+        android:hint="Yemeğin İsmi"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:padding="7dp"
+        android:id="@+id/cookernameText"
+        android:layout_width="225dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="90sp"
+        android:layout_marginTop="40sp"
+        android:background="@drawable/input"
+        android:hint="Kim Yaptı ?"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="332dp"></EditText>
+    <TextView
+        android:padding="7dp"
+        android:id="@+id/addDataText"
+        android:layout_width="225dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="90sp"
+        android:background="@drawable/input"
+        android:text="Yapılış Tarihi"
+        android:textSize="25sp" />
+
+    <Button
+        android:onClick="save"
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200sp"
+        android:layout_marginTop="50sp"
+        android:text="Kaydet"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
